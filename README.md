@@ -34,14 +34,14 @@ We use this categorical data encoding technique when the features are nominal(do
     import pandas as pd
     df=pd.read_csv("/content/Encoding Data (1).csv")
     df
-    ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/40bfb86a-3fac-4076-ab9a-92b557901f7d)
+  ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/40bfb86a-3fac-4076-ab9a-92b557901f7d)
       from sklearn.preprocessing import LabelEncoder,OrdinalEncoder
       pm=['Hot','Warm','Cold']
       e1=OrdinalEncoder(categories=[pm])
       e1.fit_transform(df[["ord_2"]])
-      ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/22d9b38b-f286-4ffc-b8f3-00d1307120cf)
+  ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/22d9b38b-f286-4ffc-b8f3-00d1307120cf)
       df['bo2']=e1.fit_transform(df[["ord_2"]])
-      ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/1f7cab4e-b56f-4ea2-ba40-a9dca33fc43c)
+  ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/1f7cab4e-b56f-4ea2-ba40-a9dca33fc43c)
        le=LabelEncoder()
        dfc=df.copy()
        dfc['ord_2']=le.fit_transform(dfc['ord_2'])
@@ -69,34 +69,34 @@ We use this categorical data encoding technique when the features are nominal(do
          ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/af1f6adc-b073-4594-928f-78ff8ae8221a)
 
          
-         ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/feded1fc-f5df-4aca-b5d0-6abfaa1dcaf4)
+  ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/feded1fc-f5df-4aca-b5d0-6abfaa1dcaf4)
           
-        ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/e315eff9-d85a-4213-bf2f-dc6fa2547ca9)
+![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/e315eff9-d85a-4213-bf2f-dc6fa2547ca9)
          
-         ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/7d326712-5042-4520-a9b8-8b4d12fbcf28)
+![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/7d326712-5042-4520-a9b8-8b4d12fbcf28)
           
-          ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/6920b7f0-7d06-4e92-9509-40897ffa8275)
+![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/6920b7f0-7d06-4e92-9509-40897ffa8275)
            df["Higly Positive Skew_borcox"],parameters=stats.boxcox(df["Highly Positive Skew"])
            
-          
-        ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/6574e292-7354-4dd7-9f7e-bd3d12bf5041)
+![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/6574e292-7354-4dd7-9f7e-bd3d12bf5041)
 
          df["Highly Negative Skew_yeojohnson"],parameters=stats.yeojohnson(df["Highly Negative Skew"])
-         ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/ccc636e2-c3fe-4487-af52-2409c55e7a8b)
+![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/ccc636e2-c3fe-4487-af52-2409c55e7a8b)
          from sklearn.preprocessing import QuantileTransformer
          qt=QuantileTransformer(output_distribution='normal')
          ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/0c093f6a-e17c-419b-ad00-474ef18b23fd)
          
-         ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/ff48fe66-1bda-4227-8b1c-7293e1a31443)
+ ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/ff48fe66-1bda-4227-8b1c-7293e1a31443)
          ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/be97c3b7-697d-461a-870e-258ca03efa87)
          ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/2c57ea1b-30dc-469d-bc6f-42266eba1cd0)
 
-         ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/c3810c1e-034d-47ce-883c-c9c7ecdee05a)
+![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/c3810c1e-034d-47ce-883c-c9c7ecdee05a)
          ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/36f959b2-3852-4e7e-b227-96799d81806b)
           ![image](https://github.com/vinodhini-17/EXNO-3-DS/assets/145742741/12e65b68-deb5-4a9b-b53b-521170744c5a)
 
 
 # RESULT:
-       # INCLUDE YOUR RESULT HERE
+    
+Thus To read the given data and perform Feature Encoding and Transformation process and save the data to a file has successfully executed 
 
        
